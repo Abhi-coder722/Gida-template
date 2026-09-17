@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Konzeptwebsite für GIDA Markt, internationaler Lebensmittelmarkt in Frankfurt-Griesheim mit Demo-Onlineshop.">
+    <title>GIDA Markt Frankfurt | Internationaler Lebensmittelmarkt</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="announcement">
+      <div class="announcement-inner">
+        <div class="announcement-copy">
+          <span data-i18n="announcementLabel">Konzept-Prototyp für GIDA Markt</span>
+          <strong data-i18n="announcementHours">Geprüfte Öffnungszeiten: Mo-Sa 05:00-24:00, So 05:00-16:00</strong>
+        </div>
+        <div class="language-switch" aria-label="Sprache wählen">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <button class="lang-option active" type="button" data-lang="de" aria-pressed="true">DE</button>
+          <button class="lang-option" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="header-main">
+        <a class="brand" href="#top" aria-label="GIDA Markt Startseite">
+          <span class="brand-mark">G</span>
+          <span>
+            <strong>GIDA Markt</strong>
+            <small>Internationaler Lebensmittelmarkt</small>
+          </span>
+        </a>
+        <button class="icon-button menu-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+        <form class="search" role="search">
+          <label class="sr-only" for="siteSearch">Produkte suchen</label>
+          <i class="fa-solid fa-magnifying-glass search-leading-icon" aria-hidden="true"></i>
+          <input id="siteSearch" type="search" placeholder="Reis, Gewürze, Baklava, Mango..." autocomplete="off" data-i18n-placeholder="searchPlaceholder">
+          <button type="submit" aria-label="Suchen" data-i18n-aria="searchButton">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </form>
+        <button class="cart-button" type="button" id="cartToggle" aria-label="Warenkorb öffnen" data-i18n-aria="openCart">
+          <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
+          <span data-i18n="cartLabel">Warenkorb</span>
+          <strong id="cartCount">0</strong>
+        </button>
+      </div>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#angebote" data-i18n="navDeals">Angebote</a>
+        <a href="#sortiment" data-i18n="navAssortment">Sortiment</a>
+        <a href="#frische" data-i18n="navFresh">Frische</a>
+        <a href="#markt" data-i18n="navMarket">Marktinfo</a>
+        <a href="#anfahrt" data-i18n="navLocation">Anfahrt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="heroEyebrow">Frankfurt-Griesheim · Lebensmittel aus vielen Küchen</p>
+          <h1>GIDA Markt als warmer, moderner Markt mit kleinem Online-Shop.</h1>
+          <p class="lead">Ein realistischer Website-Vorschlag: frische Ware, internationale Grundzutaten, Angebote und schnelle Orientierung für Kundinnen und Kunden in Frankfurt.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#angebote">Angebote ansehen</a>
+            <a class="button secondary" href="#anfahrt">Markt finden</a>
+          </div>
+          <dl class="verified-card">
+            <div>
+              <dt>Verifiziert</dt>
+              <dd>Gida Markt, Waldschulstraße, 65933 Frankfurt am Main</dd>
+            </div>
+            <div>
+              <dt>Hinweis</dt>
+              <dd>Produkte und Preise sind Demo-Inhalte für den Vorschlag.</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-media" aria-label="Internationale Lebensmittel und frische Produkte">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1300&q=82" alt="Bunter Marktstand mit frischem Obst und Gemüse">
+          <div class="hero-badge">
+            <strong>05:00</strong>
+            <span>früh geöffnet</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-cats" aria-label="Beliebte Kategorien">
+        <a href="#shop" data-filter-link="produce" data-i18n="catProduce">Obst & Gemüse</a>
+        <a href="#shop" data-filter-link="spices" data-i18n="catSpices">Gewürze</a>
+        <a href="#shop" data-filter-link="rice" data-i18n="catRice">Reis & Hülsenfrüchte</a>
+        <a href="#shop" data-filter-link="specialties" data-i18n="catSpecialties">Spezialitäten</a>
+        <a href="#shop" data-filter-link="drinks" data-i18n="catDrinks">Getränke</a>
+      </section>
+
+      <section class="section intro-grid" id="sortiment">
+        <div>
+          <p class="eyebrow">Sortiment als Konzept</p>
+          <h2>Ein Markt, der Alltagseinkauf und internationale Vorratskammer verbindet.</h2>
+          <p>Die Sortimentsbereiche sind als plausible Struktur für einen internationalen Lebensmittelmarkt angelegt. Konkrete Marken und Preise sollten vor Livegang mit dem Inhaber abgeglichen werden.</p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80" alt="Frisches Obst">
+            <h3>Frische zuerst</h3>
+            <p>Obst, Gemüse und gekühlte Ware prominent und appetitlich präsentiert.</p>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80" alt="Gewürze in Schalen">
+            <h3>Gewürze & Vorrat</h3>
+            <p>Reis, Hülsenfrüchte, Öle, Saucen und Gewürze für viele Küchen.</p>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=600&q=80" alt="Regal in einem Lebensmittelmarkt">
+            <h3>Alltagseinkauf</h3>
+            <p>Snacks, Getränke, Tiefkühlware und Haushaltsartikel in klaren Kategorien.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="deals section" id="angebote">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Demo-Angebote</p>
+            <h2>Wochenangebote als verkaufsstarker Einstieg.</h2>
+          </div>
+          <a href="#shop">Alle Produkte</a>
+        </div>
+        <div class="deal-strip">
+          <article>
+            <span>-18%</span>
+            <h3>Basmati Reis 5 kg</h3>
+            <p>Vorratsklassiker für Familienküche und Gastronomie.</p>
+          </article>
+          <article>
+            <span>Neu</span>
+            <h3>Mango & Granatapfel</h3>
+            <p>Fruchtige Highlights für Wochenende und Besuch.</p>
+          </article>
+          <article>
+            <span>Beliebt</span>
+            <h3>Baklava Mix</h3>
+            <p>Süßwaren prominent für Impulskäufe platzieren.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="shop section" id="shop">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Mini-Shop</p>
+            <h2>Prototypeinkauf mit echten Warenkorb-Interaktionen.</h2>
+          </div>
+          <p class="demo-note">Demo-Preise, keine verifizierte aktuelle Ware.</p>
+        </div>
+        <div class="shop-tools">
+          <div class="filters" role="tablist" aria-label="Produktfilter">
+            <button class="filter active" type="button" data-filter="all" data-i18n="catAll">Alle</button>
+            <button class="filter" type="button" data-filter="produce" data-i18n="catProduce">Obst & Gemüse</button>
+            <button class="filter" type="button" data-filter="rice" data-i18n="catRice">Reis & Hülsenfrüchte</button>
+            <button class="filter" type="button" data-filter="spices" data-i18n="catSpices">Gewürze</button>
+            <button class="filter" type="button" data-filter="fresh" data-i18n="catFresh">Frische</button>
+            <button class="filter" type="button" data-filter="drinks" data-i18n="catDrinks">Getränke</button>
+            <button class="filter" type="button" data-filter="specialties" data-i18n="catSpecialties">Spezialitäten</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="fresh-band" id="frische">
+        <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&w=1100&q=82" alt="Frisches Gemüse auf einem Markt">
+        <div>
+          <p class="eyebrow">Frischeabteilung</p>
+          <h2>Obst, Gemüse und gekühlte Produkte brauchen auf der Website denselben Stellenwert wie im Markt.</h2>
+          <p>Die Konzeptseite setzt frische Bilder, Tagesangebote und kurze Wege in den Warenkorb ein. So fühlt sich der Markt online nicht wie ein Katalog an, sondern wie ein echter Einkauf.</p>
+          <ul class="check-list">
+            <li>Saisonale Kacheln für Obst und Gemüse</li>
+            <li>Klare Hinweise auf Demo-Preise und Verfügbarkeit</li>
+            <li>Mobile Produktkarten mit großen Touch-Zielen</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section why">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Warum GIDA Markt?</p>
+            <h2>Praktisch, lokal, international.</h2>
+          </div>
+        </div>
+        <div class="why-grid">
+          <article>
+            <span>01</span>
+            <h3>Lange Öffnungszeiten</h3>
+            <p>Die verifizierten Zeiten machen GIDA Markt besonders alltagstauglich für frühe und späte Einkäufe.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Internationale Auswahl</h3>
+            <p>Die Website führt Kundschaft schnell zu Vorratswaren, Spezialitäten und frischen Zutaten.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Frankfurter Nähe</h3>
+            <p>Adresse, Anfahrt und klare Marktinfos stehen sichtbar im Vordergrund statt versteckt im Footer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="market-info section" id="markt">
+        <div class="info-card">
+          <p class="eyebrow">Marktinfo</p>
+          <h2>GIDA Markt</h2>
+          <address>Waldschulstraße<br>65933 Frankfurt am Main · Griesheim</address>
+          <p>Telefon und offizielle Website wurden in der kurzen Webrecherche nicht verlässlich verifiziert und bleiben deshalb Platzhalter für die Präsentation.</p>
+        </div>
+        <div class="hours-card">
+          <h3>Öffnungszeiten</h3>
+          <table>
+            <tr><th>Mo-Sa</th><td>05:00-24:00</td></tr>
+            <tr><th>Sonntag</th><td>05:00-16:00</td></tr>
+          </table>
+          <small>Quelle: OpenStreetMap, Node 10143387938</small>
+        </div>
+      </section>
+
+      <section class="reviews section" aria-label="Präsentationsstimmen">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Präsentationsbereich</p>
+            <h2>Bewertungen als Platzhalter, bis echte Kundenstimmen vorliegen.</h2>
+          </div>
+        </div>
+        <div class="review-grid">
+          <blockquote>
+            <p>"Genau so könnte der Markt online wirken: übersichtlich, nahbar und mit starkem Frische-Gefühl."</p>
+            <cite>Demo-Stimme für die Präsentation</cite>
+          </blockquote>
+          <blockquote>
+            <p>"Die Produktbereiche helfen, internationale Zutaten schneller zu finden."</p>
+            <cite>Demo-Stimme für UX-Konzept</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="location section" id="anfahrt">
+        <div>
+          <p class="eyebrow">Anfahrt</p>
+          <h2>Direkt in Frankfurt-Griesheim.</h2>
+          <p>Die Karte nutzt die verifizierten Koordinaten aus OpenStreetMap. Für eine Live-Seite können später Google Maps, Apple Maps und OPNV-Hinweise ergänzt werden.</p>
+          <a class="button primary" href="https://www.openstreetmap.org/node/10143387938" target="_blank" rel="noreferrer">Auf OpenStreetMap ansehen</a>
+        </div>
+        <a class="map-visual" href="https://www.openstreetmap.org/node/10143387938" target="_blank" rel="noreferrer" aria-label="GIDA Markt auf OpenStreetMap ansehen">
+          <span class="road road-a"></span>
+          <span class="road road-b"></span>
+          <span class="road road-c"></span>
+          <span class="map-marker"></span>
+          <span class="map-label"><strong>GIDA Markt</strong>Waldschulstraße · 65933 Frankfurt</span>
+        </a>
+      </section>
+
+      <section class="newsletter">
+        <div>
+          <p class="eyebrow">Angebote per Nachricht</p>
+          <h2>Ein einfacher Newsletter für Wochenangebote und neue Ware.</h2>
+        </div>
+        <form>
+          <label class="sr-only" for="email">E-Mail-Adresse</label>
+          <input id="email" type="email" placeholder="E-Mail-Adresse">
+          <button type="submit">Anmelden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark">G</span>
+          <span><strong>GIDA Markt</strong><small>Konzeptwebsite</small></span>
+        </a>
+        <p>Internationaler Lebensmittelmarkt in Frankfurt-Griesheim. Diese Seite ist ein visueller und technischer Vorschlag, keine offizielle Live-Website.</p>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <p>Waldschulstraße<br>65933 Frankfurt am Main</p>
+        <p>Telefon: bitte verifizieren</p>
+      </div>
+      <div>
+        <h3>Shop</h3>
+        <a href="#angebote">Angebote</a>
+        <a href="#shop">Sortiment</a>
+        <a href="#frische">Frische</a>
+      </div>
+      <div>
+        <h3>Rechtliches</h3>
+        <a href="research.md">Recherchehinweise</a>
+        <a href="#top">Datenschutz Demo</a>
+        <a href="#top">Impressum Demo</a>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Warenkorb">
+      <div class="cart-panel">
+        <div class="cart-head">
+          <div>
+            <p class="eyebrow">Demo-Warenkorb</p>
+            <h2>Dein Einkauf</h2>
+          </div>
+          <button class="icon-button close-cart" type="button" id="cartClose" aria-label="Warenkorb schließen" data-i18n-aria="closeCart">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-empty" id="cartEmpty">Noch keine Produkte im Warenkorb.</div>
+        <div class="cart-summary">
+          <div><span>Zwischensumme</span><strong id="cartSubtotal">0,00 €</strong></div>
+          <div><span>Geschätzte Summe</span><strong id="cartTotal">0,00 €</strong></div>
+          <button type="button">Zur Kasse (Demo)</button>
+          <small>Preise und Verfügbarkeit dienen nur der Präsentation.</small>
+        </div>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
